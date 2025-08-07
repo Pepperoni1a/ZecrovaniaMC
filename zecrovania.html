@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zecrovania Minecraft Server</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(-45deg, #1e3c72, #2a5298, #0f2027, #203a43);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: white;
+  text-align: center;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  padding: 30px 20px;
+}
+
+@keyframes fadeInSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0.2em 0;
+  opacity: 0;
+  animation: fadeInSlideDown 1.5s forwards;
+  animation-delay: 0.5s;
+}
+
+header p {
+  font-size: 1.2em;
+  opacity: 0.8;
+}
+
+.server-ip h2,
+.mods-download h2,
+.discord-section h2 {
+  font-size: 2em;
+  margin-top: 40px;
+}
+
+#ip-box {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.download-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 30px;
+  background-color: #00c9a7;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #00a88d;
+}
+
+.discord-icon img {
+  width: 80px;
+  margin-top: 15px;
+  transition: transform 0.3s;
+}
+
+.discord-icon img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 0.9em;
+  opacity: 0.6;
+}
+  </style>
+  <script>
+console.log("Welcome to Zecrovania!");
+
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Welcome to Zecrovania</h1>
+      <p>Minecraft Modded Server </p>
+    </header>
+
+    <section class="server-ip">
+      <h2>Server IP</h2>
+      <div id="ip-box">Zecrovania.Terracentrus.Com</div>
+    </section>
+
+    <section class="mods-download">
+      <h2>Mod Pack</h2>
+      <p>Download the required mods to join our server. Make sure to install them before connecting!</p>
+      <p>(( All in One Folder ))</p>
+      <p>For Fabric GameVer 1.21.1</p>
+      <a class="download-button" href="https://www.mediafire.com/folder/7b4dqdtjzxzfx/mods" target="_blank">Download Mods from MediaFire</a>
+    </section>
+
+    <section class="discord-section">
+      <h2>Join our Discord</h2>
+      <a class="discord-icon" href="https://discord.gg/fZnsHFC3">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Join our Discord" />
+      </a>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Zecrovania Server.</p>
+    </footer>
+  </div>
+</body>
+</html>
